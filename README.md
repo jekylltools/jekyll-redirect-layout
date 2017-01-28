@@ -8,7 +8,7 @@ Jekyll layout to create URL redirects in pure Liquid. No plugin needed.
 
 2. Create a `_redirects` folder in your Jekyll root folder.
 
-3. Add the following to your `_config.yml`
+3. Add the following to your `_config.yml`:
 
 	```
 	collections:
@@ -25,7 +25,9 @@ Jekyll layout to create URL redirects in pure Liquid. No plugin needed.
 
 ## Usage
 
-A redirect is Jekyll page which redirects the browser to a new location. Redirect files are added to the `_redirects` folder. We configure each redirect with front-matter variables.
+A redirect is a Jekyll page which redirects the browser to a new location. Redirect files are added to the `_redirects` folder and use the redirect layout by default.
+
+Configure each redirect with front-matter variables:
 
 **`permalink`** _(required)_
 
@@ -43,13 +45,13 @@ The destination is the URL to which the browser will be redirected. For example:
 destination: /to-this-location/
 ```
 
-**`canonical: true/false`** _(optional. defaults to false)_
+**`canonical`** _(optional. defaults to false)_
 
-Set `canonical` to true if you want to indicate the destination is the canonical URL for this redirect.
+Set `canonical` to `true` if you want to indicate the destination is the canonical URL for this redirect.
 
-**`prepend: true/false`** _(optional. defaults to false)_
+**`prepend`** _(optional. defaults to false)_
 
-Set `prepend` to true if you want to add `site.url` in front of the destination URL. Leave this false if you are redirecting to an external URL.
+Set `prepend` to `true` if you want to add `site.url` in front of the destination URL. Leave this false if you are redirecting to an external URL.
 
 If you are using a sitemap generator, you generally want to exclude all redirects from your sitemap. Usually this is done by adding `sitemap: false` as a front-matter variable.
 

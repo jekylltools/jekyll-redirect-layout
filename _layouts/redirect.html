@@ -1,12 +1,10 @@
 ---
 ---
-
 {% if page.prepend %}
   {% capture destination %}{{ site.url }}{{ page.destination }}{% endcapture %}
 {% else %}
   {% assign destination = page.destination %}
 {% endif %}
-
 <!doctype html>
 <html>
   <head>
