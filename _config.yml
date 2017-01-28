@@ -1,1 +1,10 @@
-include:  [_redirects]
+collections:
+  redirects:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect

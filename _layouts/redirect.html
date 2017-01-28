@@ -1,13 +1,17 @@
-{% if include.prepend %}
-  {% capture destination %}{{ site.url }}{{ include.destination }}{% endcapture %}
+---
+---
+
+{% if page.prepend %}
+  {% capture destination %}{{ site.url }}{{ page.destination }}{% endcapture %}
 {% else %}
-  {% assign destination = include.destination %}
+  {% assign destination = page.destination %}
 {% endif %}
+
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    {% if include.canonical %}
+    {% if page.canonical %}
     <link rel="canonical" href="{{ destination }}">
     {% endif %}
     <noscript>
