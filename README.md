@@ -8,7 +8,7 @@ Jekyll layout to create URL redirects in pure Liquid. No plugin needed.
 
 2. Create a `_redirects` folder in your Jekyll root folder.
 
-3. Add the following to your `_config.yml`:
+3. Add the following to your `_config.yml`. This adds the `redirects` collection to Jekyll and sets the default layout for the collection:
 
 	```
 	collections:
