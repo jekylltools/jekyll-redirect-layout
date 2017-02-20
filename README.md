@@ -2,6 +2,10 @@
 
 Jekyll layout to create URL redirects in pure Liquid. No plugin necessary.
 
+Generates Javascript redirects with fall back to meta refresh redirects. Fully compatible with Github Pages.
+
+View a [live demo running on Github Pages](https://xhn35rq.github.io/jekyll-redirect-layout/examples/). The code and configuration for the demo is in the [gh-pages branch](https://github.com/xHN35RQ/jekyll-redirect-layout/tree/gh-pages).
+
 ## Installation
 
 1. Add `_layouts/redirect.html` to the `_layouts` folder.
@@ -49,9 +53,9 @@ destination: /to-this-location/
 
 Set `canonical` to `true` to indicate the destination is the canonical URL for this redirect.
 
-**`prepend`** _(optional. defaults to false)_
+**`external`** _(optional. defaults to false)_
 
-Set `prepend` to `true` to add `site.url` in front of the destination URL. Leave this false when redirecting to an external URL.
+Set `external` to `true` if this redirect points to another domain.
 
 When using a sitemap generator, it is common to exclude all redirects from the sitemap. Usually this is done by adding `sitemap: false` as a front-matter variable.
 
@@ -59,14 +63,14 @@ When using a sitemap generator, it is common to exclude all redirects from the s
 
 There are more examples located in the `_redirects` folder.
 
-An example internal redirect:
+An example internal canonical redirect:
 
 ```
 ---
 permalink: /redirect-this-url/
 destination: /to-this-location/
 canonical: true
-prepend: true
+external: false
 ---
 ```
 
@@ -77,7 +81,7 @@ An example external redirect:
 permalink: /leaving/
 destination: http://example.com/arriving
 canonical: false
-prepend: false
+external: true
 ---
 ```
 
