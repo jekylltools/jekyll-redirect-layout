@@ -1,3 +1,8 @@
+# Config settings
+title: Jekyll Redirect Layout Demo
+baseurl: "/jekyll-redirect-layout"
+
+# Redirect settings
 collections:
   redirects:
     output: true
@@ -8,3 +13,12 @@ defaults:
       type: redirects
     values:
       layout: redirect
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
