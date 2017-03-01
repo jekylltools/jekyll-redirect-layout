@@ -4,7 +4,7 @@ Jekyll layout to create URL redirects in pure Liquid. No plugin necessary.
 
 Generates Javascript redirects with fall back to meta refresh redirects. Fully compatible with Github Pages.
 
-View a [live demo running on Github Pages](https://xhn35rq.github.io/jekyll-redirect-layout/examples/). The code and configuration for the demo is in the [gh-pages branch](https://github.com/xHN35RQ/jekyll-redirect-layout/tree/gh-pages).
+View a [live demo running on Github Pages](https://jekylltools.github.io/jekyll-redirect-layout/examples/). The code and configuration for the demo is in the [gh-pages branch](https://github.com/jekylltools/jekyll-redirect-layout/tree/gh-pages).
 
 ## Installation
 
@@ -87,4 +87,4 @@ external: true
 
 ## Support
 
-[Open an issue](https://github.com/xHN35RQ/jekyll-redirect-layout/issues) if you have any problems, questions or suggestions for improvement.
+[Open an issue](https://github.com/jekylltools/jekyll-redirect-layout/issues) if you have any problems, questions or suggestions for improvement.
