@@ -1,6 +1,6 @@
 # Jekyll Redirect Layout
 
-Jekyll layout to create URL redirects in pure Liquid. No plugin necessary.
+Jekyll layout to create URL redirects with HTML and JavaScript. No plugin necessary.
 
 Generates Javascript redirects with fall back to meta refresh redirects. Fully compatible with Github Pages.
 
@@ -12,7 +12,7 @@ View a [live demo running on Github Pages](https://jekylltools.github.io/jekyll-
 
 2. Create a `_redirects` folder in the Jekyll root folder.
 
-3. Add the following to `_config.yml`. This adds the `redirects` collection to Jekyll and sets the default layout for the collection:
+3. Add the following to `_config.yml`. This adds the `redirects` collection to Jekyll and sets the default layout for the collection to `_layouts/redirect.html`:
 
 	```
 	collections:

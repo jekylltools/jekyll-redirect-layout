@@ -1,3 +1,4 @@
+# Redirect settings
 collections:
   redirects:
     output: true
