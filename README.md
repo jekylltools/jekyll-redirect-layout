@@ -53,10 +53,6 @@ destination: /to-this-location/
 
 Set `canonical` to `true` to indicate the destination is the canonical URL for this redirect.
 
-**`external`** _(optional. defaults to false)_
-
-Set `external` to `true` if this redirect points to another domain.
-
 When using a sitemap generator, it is common to exclude all redirects from the sitemap. Usually this is done by adding `sitemap: false` as a front-matter variable.
 
 ## Examples
@@ -70,7 +66,6 @@ An example internal canonical redirect:
 permalink: /redirect-this-url/
 destination: /to-this-location/
 canonical: true
-external: false
 ---
 ```
 
@@ -81,7 +76,6 @@ An example external redirect:
 permalink: /leaving/
 destination: http://example.com/arriving
 canonical: false
-external: true
 ---
 ```
 

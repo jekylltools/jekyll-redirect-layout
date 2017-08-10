@@ -1,13 +1,9 @@
 ---
 # Jekyll layout to create URL redirects
 # https://github.com/jekylltools/jekyll-redirect-layout
-# v1.6
+# v1.7
 ---
-{%- if page.external == true -%}
-  {%- assign destination = page.destination -%}
-{%- else -%}
-  {%- assign destination = page.destination | absolute_url -%}
-{%- endif -%}
+{%- assign destination = page.destination | absolute_url -%}
 <!doctype html>
 <html>
   <head>
