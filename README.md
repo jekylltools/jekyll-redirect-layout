@@ -78,7 +78,3 @@ destination: http://example.com/arriving
 canonical: false
 ---
 ```
-
-## Support
-
-[Open an issue](https://github.com/jekylltools/jekyll-redirect-layout/issues) if you have any problems, questions or suggestions for improvement.
