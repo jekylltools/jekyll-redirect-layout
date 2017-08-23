@@ -2,7 +2,7 @@ Your pull request will be ignored.
 
 This repository has been archived.
 
-- Issues have been disabled.
+- Issues are disabled.
 - Pull requests will be ignored.
 - No updates will be made to this repository.
 
